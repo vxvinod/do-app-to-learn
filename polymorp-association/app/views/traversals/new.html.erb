@@ -1,0 +1,11 @@
+<h1>Traversals#new</h1>
+
+<%= form_for [@traversable, Traversal.new] do |f| %>
+	<% if @traversal.errors.any? %>
+		<% @traversal.errors.full_messages.each do |traversal| %>
+		<%= travesal%>
+		<%end%>
+	<% end %>
+	<%= f.text_field :content %>
+	<%= f.submit "submit traversal"%>
+<%end%>

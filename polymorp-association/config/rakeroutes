@@ -1,0 +1,51 @@
+              Prefix Verb   URI Pattern                                       Controller#Action
+     traversals_index GET    /traversals/index(.:format)                       traversals#index
+       traversals_new GET    /traversals/new(.:format)                         traversals#new
+     event_traversals GET    /events/:event_id/traversals(.:format)            traversals#index
+                      POST   /events/:event_id/traversals(.:format)            traversals#create
+  new_event_traversal GET    /events/:event_id/traversals/new(.:format)        traversals#new
+ edit_event_traversal GET    /events/:event_id/traversals/:id/edit(.:format)   traversals#edit
+      event_traversal GET    /events/:event_id/traversals/:id(.:format)        traversals#show
+                      PATCH  /events/:event_id/traversals/:id(.:format)        traversals#update
+                      PUT    /events/:event_id/traversals/:id(.:format)        traversals#update
+                      DELETE /events/:event_id/traversals/:id(.:format)        traversals#destroy
+               events GET    /events(.:format)                                 events#index
+                      POST   /events(.:format)                                 events#create
+            new_event GET    /events/new(.:format)                             events#new
+           edit_event GET    /events/:id/edit(.:format)                        events#edit
+                event GET    /events/:id(.:format)                             events#show
+                      PATCH  /events/:id(.:format)                             events#update
+                      PUT    /events/:id(.:format)                             events#update
+                      DELETE /events/:id(.:format)                             events#destroy
+     photo_traversals GET    /photos/:photo_id/traversals(.:format)            traversals#index
+                      POST   /photos/:photo_id/traversals(.:format)            traversals#create
+  new_photo_traversal GET    /photos/:photo_id/traversals/new(.:format)        traversals#new
+ edit_photo_traversal GET    /photos/:photo_id/traversals/:id/edit(.:format)   traversals#edit
+      photo_traversal GET    /photos/:photo_id/traversals/:id(.:format)        traversals#show
+                      PATCH  /photos/:photo_id/traversals/:id(.:format)        traversals#update
+                      PUT    /photos/:photo_id/traversals/:id(.:format)        traversals#update
+                      DELETE /photos/:photo_id/traversals/:id(.:format)        traversals#destroy
+               photos GET    /photos(.:format)                                 photos#index
+                      POST   /photos(.:format)                                 photos#create
+            new_photo GET    /photos/new(.:format)                             photos#new
+           edit_photo GET    /photos/:id/edit(.:format)                        photos#edit
+                photo GET    /photos/:id(.:format)                             photos#show
+                      PATCH  /photos/:id(.:format)                             photos#update
+                      PUT    /photos/:id(.:format)                             photos#update
+                      DELETE /photos/:id(.:format)                             photos#destroy
+    author_traversals GET    /authors/:author_id/traversals(.:format)          traversals#index
+                      POST   /authors/:author_id/traversals(.:format)          traversals#create
+ new_author_traversal GET    /authors/:author_id/traversals/new(.:format)      traversals#new
+edit_author_traversal GET    /authors/:author_id/traversals/:id/edit(.:format) traversals#edit
+     author_traversal GET    /authors/:author_id/traversals/:id(.:format)      traversals#show
+                      PATCH  /authors/:author_id/traversals/:id(.:format)      traversals#update
+                      PUT    /authors/:author_id/traversals/:id(.:format)      traversals#update
+                      DELETE /authors/:author_id/traversals/:id(.:format)      traversals#destroy
+              authors GET    /authors(.:format)                                authors#index
+                      POST   /authors(.:format)                                authors#create
+           new_author GET    /authors/new(.:format)                            authors#new
+          edit_author GET    /authors/:id/edit(.:format)                       authors#edit
+               author GET    /authors/:id(.:format)                            authors#show
+                      PATCH  /authors/:id(.:format)                            authors#update
+                      PUT    /authors/:id(.:format)                            authors#update
+                      DELETE /authors/:id(.:format)                            authors#destroy
