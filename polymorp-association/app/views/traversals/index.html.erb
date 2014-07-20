@@ -1,7 +1,4 @@
 <h1>Traversals comments</h1>
-<% @travers.each do |traver| %>
-	<br>
-	<%= traver.content %>
-<%end%>
+<%= render "travers" %>
 <br>
 <%= link_to "new traversals",[:new,@traversable,:traversal] %>

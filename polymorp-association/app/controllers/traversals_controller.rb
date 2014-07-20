@@ -2,7 +2,11 @@ class TraversalsController < ApplicationController
   before_filter :load_traversable
 
   def index
-  	@travers = @traversable.traversals
+  	@travers = @traversable.traversals.where('id > ?',params[:after].to_i)
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
 
   def new
@@ -12,7 +16,7 @@ class TraversalsController < ApplicationController
   def create
   	@traversal = @traversable.traversals.new(traverse_params)
   	if @traversal.save
-  		redirect_to [@traversable,:traversals]
+  		redirect_to @traversable
   	else
   		render :new
   	end

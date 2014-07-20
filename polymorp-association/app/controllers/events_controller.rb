@@ -10,6 +10,9 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @traversable = @event
+    @travers = @traversable.traversals
+    @traversal = Traversal.new
   end
 
   # GET /events/new

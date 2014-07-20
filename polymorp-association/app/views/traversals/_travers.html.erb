@@ -1,0 +1,6 @@
+<% @travers.each do |traver| %>
+	<br>
+	<%=content_tag :div, :class => "comment", :data => {:id => traver.id} do %>
+	<%= traver.content %>
+	<%end%>
+<%end%>

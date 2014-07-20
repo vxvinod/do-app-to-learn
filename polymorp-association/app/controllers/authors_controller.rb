@@ -10,6 +10,9 @@ class AuthorsController < ApplicationController
   # GET /authors/1
   # GET /authors/1.json
   def show
+    @traversable = @author
+    @travers = @traversable.traversals
+    @traversal = Traversal.new
   end
 
   # GET /authors/new

@@ -10,6 +10,9 @@ class PhotosController < ApplicationController
   # GET /photos/1
   # GET /photos/1.json
   def show
+    @traversable = @photo
+    @travers = @traversable.traversals
+    @traversal = Traversal.new
   end
 
   # GET /photos/new
